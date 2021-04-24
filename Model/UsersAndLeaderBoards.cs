@@ -8,6 +8,8 @@ namespace Case.Model
 {
     public abstract class UsersAndLeaderBoards
     {
+        //common class Items
+
         [Required]
         public string display_name { get; set; }
 

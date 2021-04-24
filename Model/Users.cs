@@ -9,6 +9,7 @@ namespace Case.Model
 {
     public class Users:UsersAndLeaderBoards
     {
+        //Creating identity and primary key
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key, Required]
         public string user_id { get; set; }
