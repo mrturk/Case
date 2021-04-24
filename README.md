@@ -1,6 +1,7 @@
 # Case
 CaseStudyGodJobGame
 
+postgresql used as database
 connectionString connection must be done first,
 then the command "update-database" should be written on the pm console side
 
