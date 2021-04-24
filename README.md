@@ -1,6 +1,9 @@
 # Case
 CaseStudyGodJobGame
 
+connectionString connection must be done first,
+then the command "update-database" should be written on the pm console side
+
 user/create
 {"display_name":"Yunus", "points":10, "rank":10 }
 
