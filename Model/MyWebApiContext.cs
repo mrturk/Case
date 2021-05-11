@@ -10,8 +10,8 @@ namespace Case.Model
     {
         public MyWebApiContext(DbContextOptions<MyWebApiContext> options) : base(options) { }
 
+
+        //Model specification for migration
         public DbSet<Users> Users { get; set; }
-        public DbSet<LeaderBoards> LeaderBoards { get; set; }
-        public DbSet<Scores> Scores { get; set; }
     }
 }
