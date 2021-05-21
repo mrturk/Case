@@ -7,19 +7,22 @@ using System.Threading.Tasks;
 
 namespace Case.Model
 {
-    public class Users
+    public class BasketProduct
     {
-        //Creating identity and primary key
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Key, Required]
-        public string user_id { get; set; }
+
+        [Key]
+        public int Id { get; set; }
 
         //required
         [Required]
-        public string username { get; set; }
+        public int SepetId { get; set; }
 
         //required
         [Required]
-        public string password { get; set; }
+        public float Tutar { get; set; }
+
+        //required
+        [Required]
+        public string Aciklama { get; set; }
     }
 }

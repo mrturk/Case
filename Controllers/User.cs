@@ -43,7 +43,12 @@ namespace Case.Controllers
         [Route("user/allusers")]
         public IActionResult allUsers()
         {
-            return Ok(_MyWebApiContext.Users.ToList());
+            Basket basket = new Basket();
+            basket.MusterId = "denemetest";
+
+            _MyWebApiContext.Basket.Add(basket);
+            _MyWebApiContext.SaveChanges();
+            return Ok(_MyWebApiContext.Basket.ToList());
         }
 
         //Allow Anonymity
@@ -68,7 +73,6 @@ namespace Case.Controllers
 
             ResponseAuth responseAuth = new ResponseAuth
             {
-                email = response[0].email,
                 password = null,
                 token = token,
                 username = response[0].username,

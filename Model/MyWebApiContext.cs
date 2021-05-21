@@ -13,5 +13,12 @@ namespace Case.Model
 
         //Model specification for migration
         public DbSet<Users> Users { get; set; }
+
+        public DbSet<Customer> Customer { get; set; }
+
+
+        public DbSet<Basket> Basket { get; set; }
+
+        public DbSet<BasketProduct> BasketProduct { get; set; }
     }
 }
